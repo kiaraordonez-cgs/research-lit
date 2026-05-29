@@ -1,22 +1,22 @@
 ---
 type: moc
-category: Health-Cobenefits
+theme: health-cobenefits
 ---
 
-# 🗺️ Health & Air Quality Co-benefits
+# 🗺️ Health Co-benefits
 
-Air pollution, health burden, and the co-benefits of mitigation. The "climate policy pays for itself in lungs" cluster.
+Air pollution, health burden, and how mitigation pays for itself in avoided morbidity and mortality.
 
-## Synthesis
+## My synthesis
 - 
-
-## Key papers
-- [[The impact of human health co-benefits on evaluations of global climate policy]]
-- [[Socio-demographic factors shaping future global health burden from air pollution]]
-- [[Effects of global climate mitigation on regional air quality and health]]
-- [[The Critical Role of Policy Enforcement - Indias Clean Electricity Transition]]
-- [[Economy-wide evaluation of CO2 and air quality impacts of electrification]]
-- [[Health and air pollutant emission impacts of net zero CO2 by 2050 - EMF37]]
 
 ## Open threads
 - 
+
+## Auto-listed papers (tagged `health-cobenefits`)
+```dataview
+TABLE year, authors, status, rating
+FROM "papers"
+WHERE contains(themes, "health-cobenefits")
+SORT year DESC
+```

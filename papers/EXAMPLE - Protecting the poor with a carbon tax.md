@@ -6,8 +6,11 @@ journal: Nature Climate Change
 doi: 10.1038/s41558-021-01228-x
 zotero: "@budolfson2021protecting"
 type: empirical
-categories: [Equity-Distribution, Policy-Design]
-keywords: [carbon-tax, dividend, distributional-effects, revenue-recycling, poverty]
+models: [iam-generic]
+sectors: [economy-wide]
+levers: [carbon-tax, dividend-recycling]
+regions: [global]
+themes: [equity, policy-design]
 status: read
 rating: 4
 date_read: 2026-05-25
@@ -20,7 +23,7 @@ date_read: 2026-05-25
 
 ## Why I read it / how it connects
 - Core reference for the distributional-design question in my work
-- Direct companion to [[Climate action with revenue recycling]] — both argue recycling design dominates the regressivity worry
+- Companion to [[Climate action with revenue recycling]] — both argue recycling design dominates the regressivity worry
 - Counterpoint to the naive "carbon taxes hurt the poor" framing
 
 ## Key points

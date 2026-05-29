@@ -2,49 +2,65 @@
 
 Entry point for the vault. Start here.
 
-## 🗺️ Maps of Content (the seven big buckets)
-- [[IAM-Methods]] — model development, methodology, scenario design
-- [[Decarbonization-Pathways]] — mitigation pathways, net-zero, NETs
-- [[Policy-Design]] — instruments, sequencing, mixes, enforcement
-- [[Health-Cobenefits]] — air quality, health burden, co-benefits
-- [[Equity-Distribution]] — distributional effects, justice
-- [[Transport-Electrification]] — EVs, charging, travel demand
-- [[Finance-Investment]] — investment needs, macro backdrop
+## 🗺️ Theme MOCs (concept hubs — your synthesis lives here)
+- [[Equity]]
+- [[Pathways]]
+- [[Policy-Design]]
+- [[Health-Cobenefits]]
+- [[Investment]]
 
 ## 📥 Inbox
-Papers I've added but not yet processed into a full note:
+Papers I've added but not yet processed:
 - 
 
-## 🔎 Live queries (requires the Dataview plugin)
+## 🔎 Live queries
 
-### Unread papers
+### Unread queue
 ```dataview
-TABLE year, journal, categories
+TABLE year, authors, themes, sectors
 FROM "papers"
 WHERE status = "to-read"
 SORT year DESC
 ```
 
-### Everything tagged equity, newest first
+### Reading log — what I read and when
 ```dataview
-TABLE authors, year, status
+TABLE date_read, rating, themes
 FROM "papers"
-WHERE contains(categories, "Equity-Distribution")
-SORT year DESC
+WHERE date_read
+SORT date_read DESC
 ```
 
-### High-rated papers I've deep-read
+### High-rated, deep-read
 ```dataview
-TABLE rating, categories
+TABLE rating, themes, sectors
 FROM "papers"
 WHERE rating >= 4 AND status = "deep-read"
 SORT rating DESC
 ```
 
-### Reading log — what I read and when
+### Slice by model (example: GCAM)
 ```dataview
-TABLE date_read, rating
+TABLE year, authors, sectors, regions
 FROM "papers"
-WHERE date_read
-SORT date_read DESC
+WHERE contains(models, "gcam")
+SORT year DESC
 ```
+
+### Slice by sector (example: transportation)
+```dataview
+TABLE year, authors, regions, themes
+FROM "papers"
+WHERE contains(sectors, "transportation")
+SORT year DESC
+```
+
+### Slice by region (example: United States)
+```dataview
+TABLE year, authors, sectors, themes
+FROM "papers"
+WHERE contains(regions, "united-states")
+SORT year DESC
+```
+
+_Edit any query above to filter on different values. Combine fields with `and` for narrower slices, e.g. `contains(models, "gcam") and contains(sectors, "transportation")`._

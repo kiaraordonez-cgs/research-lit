@@ -6,8 +6,11 @@ journal:
 doi: 
 zotero: 
 type: 
-categories: 
-keywords: 
+models: 
+sectors: 
+levers: 
+regions: 
+themes: 
 status: to-read
 rating: 
 date_read: 
