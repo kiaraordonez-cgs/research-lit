@@ -11,10 +11,14 @@
             "id": "057670fe916edba7",
             "type": "leaf",
             "state": {
-              "type": "graph",
-              "state": {},
-              "icon": "lucide-git-fork",
-              "title": "Graph view"
+              "type": "markdown",
+              "state": {
+                "file": "_templates/paper-template.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "paper-template"
             }
           }
         ]
@@ -181,6 +185,7 @@
   "active": "057670fe916edba7",
   "lastOpenFiles": [
     "papers/EXAMPLE - Protecting the poor with a carbon tax.md",
+    "_templates/paper-template.md",
     "README.md",
     "MOCs/IAM-Methods.md",
     "MOCs/Decarbonization-Pathways.md",
@@ -189,7 +194,6 @@
     "MOCs/Equity-Distribution.md",
     "MOCs/Transport-Electrification.md",
     "MOCs/Finance-Investment.md",
-    "_templates/paper-template.md",
     "papers",
     "_templates",
     "MOCs",
