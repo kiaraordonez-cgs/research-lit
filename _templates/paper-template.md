@@ -1,19 +1,19 @@
 ---
-title: 
-authors: 
-year: 
-journal: 
-doi: 
-zotero: 
-type: 
-models: 
-sectors: 
-levers: 
-regions: 
-themes: 
+title:
+authors:
+year:
+journal:
+doi:
+zotero:
+type:
+models:
+sectors:
+levers:
+regions:
+themes:
 status: to-read
-rating: 
-date_read: 
+rating:
+date_read:
 ---
 
 # {{title}}

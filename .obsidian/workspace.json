@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "_templates/paper-template.md",
+                "file": "README.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "paper-template"
+              "title": "README"
             }
           }
         ]
@@ -184,8 +184,9 @@
   },
   "active": "057670fe916edba7",
   "lastOpenFiles": [
-    "papers/EXAMPLE - Protecting the poor with a carbon tax.md",
+    "Home.md",
     "_templates/paper-template.md",
+    "papers/EXAMPLE - Protecting the poor with a carbon tax.md",
     "README.md",
     "MOCs/IAM-Methods.md",
     "MOCs/Decarbonization-Pathways.md",
@@ -196,7 +197,6 @@
     "MOCs/Finance-Investment.md",
     "papers",
     "_templates",
-    "MOCs",
-    "Home.md"
+    "MOCs"
   ]
 }
