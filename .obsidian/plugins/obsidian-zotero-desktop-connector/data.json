@@ -5,7 +5,15 @@
   "pdfExportImageFormat": "jpg",
   "pdfExportImageQuality": 90,
   "citeFormats": [],
-  "exportFormats": [],
+  "exportFormats": [
+    {
+      "name": "Paper stub",
+      "outputPathTemplate": "papers",
+      "imageOutputPathTemplate": "{{citekey}}/",
+      "imageBaseNameTemplate": "image",
+      "templatePath": "_templates/zotero-import-template.md"
+    }
+  ],
   "citeSuggestTemplate": "[[{{citekey}}]]",
   "openNoteAfterImport": false,
   "whichNotesToOpenAfterImport": "first-imported-note"
