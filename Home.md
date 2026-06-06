@@ -1,19 +1,23 @@
 # 📚 Research Literature — Home
 
-Entry point for the vault. Start here.
+Entry point for the lit vault. Start here.
+
+## 📊 [[Literature Matrix]]
+The full live grid of every paper. (This is what the PhD Operating System dashboard links to.)
 
 ## 🗺️ Theme MOCs (concept hubs — your synthesis lives here)
 - [[Equity]]
+- [[Health]]
+- [[Economic-Cobenefits]]
 - [[Pathways]]
 - [[Policy-Design]]
-- [[Health-Cobenefits]]
 - [[Investment]]
 
 ## 📥 Inbox
-Papers I've added but not yet processed:
+Papers added but not yet processed:
 - 
 
-## 🔎 Live queries
+## 🔎 Quick queries
 
 ### Unread queue
 ```dataview
@@ -21,14 +25,6 @@ TABLE year, authors, themes, sectors
 FROM "papers"
 WHERE status = "to-read"
 SORT year DESC
-```
-
-### Reading log — what I read and when
-```dataview
-TABLE date_read, rating, themes
-FROM "papers"
-WHERE date_read
-SORT date_read DESC
 ```
 
 ### High-rated, deep-read
@@ -39,28 +35,4 @@ WHERE rating >= 4 AND status = "deep-read"
 SORT rating DESC
 ```
 
-### Slice by model (example: GCAM)
-```dataview
-TABLE year, authors, sectors, regions
-FROM "papers"
-WHERE contains(models, "gcam")
-SORT year DESC
-```
-
-### Slice by sector (example: transportation)
-```dataview
-TABLE year, authors, regions, themes
-FROM "papers"
-WHERE contains(sectors, "transportation")
-SORT year DESC
-```
-
-### Slice by region (example: United States)
-```dataview
-TABLE year, authors, sectors, themes
-FROM "papers"
-WHERE contains(regions, "united-states")
-SORT year DESC
-```
-
-_Edit any query above to filter on different values. Combine fields with `and` for narrower slices, e.g. `contains(models, "gcam") and contains(sectors, "transportation")`._
+_Full matrix and more slices live in [[Literature Matrix]]._

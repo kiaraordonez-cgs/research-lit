@@ -1,11 +1,11 @@
 ---
 type: moc
-theme: equity
+theme: health
 ---
 
-# 🗺️ Equity & Distribution
+# 🗺️ Health Co-benefits
 
-How climate policies distribute costs and benefits across income, geography, and generations.
+Air pollution, mortality, morbidity, and how mitigation pays off in avoided physical-health harms.
 
 ## My synthesis
 _What I currently believe about this area. Update as understanding shifts._
@@ -14,10 +14,10 @@ _What I currently believe about this area. Update as understanding shifts._
 ## Open threads
 - 
 
-## Auto-listed papers (tagged `equity`)
+## Auto-listed papers (tagged `health`)
 ```dataview
 TABLE year, authors, status, rating
 FROM "papers"
-WHERE contains(themes, "equity")
+WHERE contains(themes, "health")
 SORT year DESC
 ```

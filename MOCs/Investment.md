@@ -5,9 +5,10 @@ theme: investment
 
 # 🗺️ Investment & Finance
 
-Investment needs to meet climate goals, financing gaps, the macro/financial-systems backdrop.
+Investment needs to meet climate goals, financing gaps, and the macro/financial-systems backdrop.
 
 ## My synthesis
+_What I currently believe about this area. Update as understanding shifts._
 - 
 
 ## Open threads

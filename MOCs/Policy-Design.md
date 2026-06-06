@@ -5,9 +5,10 @@ theme: policy-design
 
 # 🗺️ Policy Design
 
-Instruments, sequencing, mixes, second-best design, enforcement, political feasibility. The "how do we actually do this" cluster.
+Instruments, sequencing, mixes, second-best design, enforcement, political feasibility.
 
 ## My synthesis
+_What I currently believe about this area. Update as understanding shifts._
 - 
 
 ## Open threads

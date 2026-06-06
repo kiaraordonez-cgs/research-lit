@@ -5,9 +5,10 @@ theme: pathways
 
 # 🗺️ Decarbonization Pathways
 
-Mitigation pathways, transformation scenarios, net-zero futures, and the role of negative emissions. The "what would it take" cluster.
+Mitigation pathways, transformation scenarios, net-zero futures, and the role of negative emissions.
 
 ## My synthesis
+_What I currently believe about this area. Update as understanding shifts._
 - 
 
 ## Open threads

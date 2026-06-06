@@ -2,50 +2,51 @@
 
 Personal literature vault for IAM / energy modeling / climate policy.
 Synced via Git. PDFs live in Google Drive (linked from Zotero), not in this repo.
+Companion to the separate **PhD Operating System** vault, which links here.
 
 ## Structure
-- `Home.md` — dashboard + live queries
-- `MOCs/` — theme MOCs (concept hubs for synthesis)
+- `Home.md` — dashboard
+- `Literature Matrix.md` — the full live grid (PhD OS links to this)
+- `MOCs/` — six theme hubs for synthesis
 - `papers/` — one note per paper, from the template
-- `_templates/` — note template(s)
+- `_templates/` — note + Zotero-import templates
 
-## The tagging design
+## Tagging design — five axes plus a type
 
-Each paper is described along **five orthogonal axes** plus a `type`. Each axis is a YAML list, so a paper can have several values on each. Keep vocabularies small and consistent — Dataview queries depend on exact strings.
+Each axis is a YAML list; a paper can have several values per axis. Keep vocabularies small and exact (Dataview matches strings literally).
 
-### `type` (single value — what kind of paper it is)
+### `type` (one value)
 `empirical` · `modeling` · `review` · `scenario` · `ipcc-chapter` · `commentary`
 
-### `models` (modeling tools used or analyzed)
-Starter set: `gcam` · `dice` · `markal` · `iam-generic`
-Add as needed; lowercase, hyphens for multi-word.
+### `models`
+`gcam` · `dice` · `markal` · `iam-generic` (extend as needed)
 
-### `sectors` (physical sectors covered)
-Starter set: `electricity` · `transportation` · `buildings` · `industry` · `agriculture` · `land-use` · `water` · `hydrogen` · `economy-wide`
+### `sectors`
+`electricity` · `transportation` · `buildings` · `industry` · `agriculture` · `land-use` · `water` · `hydrogen` · `economy-wide`
 
-### `levers` (policy or technology levers)
-Starter set: `electrification` · `carbon-tax` · `dividend-recycling` · `standards` · `subsidy` · `negative-emissions` · `efficiency` · `demand-side`
+### `levers`
+`electrification` · `carbon-tax` · `dividend-recycling` · `standards` · `subsidy` · `negative-emissions` · `efficiency` · `demand-side`
 
-### `regions` (geographic scope)
-Starter set: `united-states` · `china` · `india` · `eu` · `developing-asia` · `global`
+### `regions`
+`united-states` · `china` · `india` · `eu` · `developing-asia` · `global`
 
-### `themes` (intellectual concern — match an MOC where possible)
-Starter set: `equity` · `pathways` · `policy-design` · `health-cobenefits` · `investment` · `uncertainty` · `political-feasibility` · `technology-learning`
+### `themes` (match an MOC where possible)
+`equity` · `health` · `economic-cobenefits` · `pathways` · `policy-design` · `investment` · `uncertainty` · `political-feasibility` · `technology-learning`
 
 ### Other fields
 - `status`: `to-read` · `skimmed` · `read` · `deep-read`
 - `rating`: 1–5
 - `date_read`: YYYY-MM-DD
 
-## Workflow
-1. Capture in Zotero (auto-grabs metadata; PDF lives in Google Drive)
-2. Create note in `papers/` (Templater applies the template)
-3. Fill the frontmatter axes — only the relevant ones
-4. Write the one-sentence summary in your own words
-5. Add `[[wikilinks]]` to related papers
-6. Git plugin auto-syncs every 10 min
+## Cross-vault linking
+The PhD Operating System vault references papers by **Better BibTeX citekey** (the `zotero` field, e.g. `@budolfson2021protecting`). That citekey is the universal paper ID across this vault, Zotero, the PhD OS, and Quarto/LaTeX.
 
-## Vocabulary discipline
-- When in doubt about an axis, prefer adding to `themes` over inventing a new axis
-- Rename tags vault-wide with the Tag Wrangler plugin if a term drifts
-- Don't agonize about completeness — the vocabulary grows with the library
+## Workflow
+1. Capture in Zotero (Connector). PDF added later, linked from Google Drive.
+2. Generate stub note(s) via Zotero Integration plugin (batch import).
+3. As you read: fill the axes, write the one-sentence summary, set `status` and `rating`.
+4. Add `[[wikilinks]]` to related papers and relevant MOCs.
+5. Git auto-syncs every 10 min.
+
+## Renaming a theme/tag later
+Frontmatter values, not `#tags`. Use the Tag Wrangler plugin, or a vault-wide find-and-replace. Update: (a) the value in paper notes, (b) the MOC filename, (c) the MOC's `WHERE contains(themes, "...")` line.

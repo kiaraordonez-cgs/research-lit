@@ -1,10 +1,10 @@
 ---
-title: 
-authors: 
-year: 
-journal: 
-doi: 
-zotero: 
+title: "{{title}}"
+authors: [{{authors}}]
+year: {{date | format("YYYY")}}
+journal: "{{publicationTitle}}"
+doi: {{DOI}}
+zotero: "@{{citekey}}"
 type: 
 models: 
 sectors: 
@@ -19,7 +19,7 @@ date_read:
 # {{title}}
 
 > [!summary] One-sentence summary
-> _In your own words — if you can't write this, you haven't understood it yet._
+> _In your own words — fill in when you read it._
 
 ## Why I read it / how it connects
 - 
@@ -37,3 +37,8 @@ date_read:
 
 ## Open questions / critiques
 - 
+
+{% if abstractNote %}---
+**Abstract (from Zotero):**
+{{abstractNote}}
+{% endif %}
