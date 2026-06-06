@@ -9,7 +9,7 @@ Cross-vault note: the PhD OS cannot query these papers directly (Dataview only s
 ## Full matrix
 ```dataview
 TABLE
-  authors AS "Authors",
+  authors[0] AS "First author",
   year AS "Year",
   journal AS "Journal",
   type AS "Type",
