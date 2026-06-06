@@ -1,9 +1,9 @@
 ---
 title: "{{title}}"
-authors: [{{authors}}]
+authors: [{% for a in creators %}"{{a.firstName}} {{a.lastName}}"{% if not loop.last %}, {% endif %}{% endfor %}]
 year: {{date | format("YYYY")}}
 journal: "{{publicationTitle}}"
-doi: {{DOI}}
+doi: "{{DOI}}"
 zotero: "@{{citekey}}"
 type: 
 models: 
@@ -38,7 +38,4 @@ date_read:
 ## Open questions / critiques
 - 
 
-{% if abstractNote %}---
-**Abstract (from Zotero):**
-{{abstractNote}}
-{% endif %}
+{% persist "notes" %}{% endpersist %}

@@ -10,7 +10,8 @@
       "name": "Paper stub",
       "outputPathTemplate": "papers",
       "imageOutputPathTemplate": "{{citekey}}/",
-      "imageBaseNameTemplate": "image"
+      "imageBaseNameTemplate": "image",
+      "templatePath": "_templates/zotero-import-template.md"
     }
   ],
   "citeSuggestTemplate": "[[{{citekey}}]]",
