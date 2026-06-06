@@ -182,8 +182,11 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "057670fe916edba7",
+  "active": "8474c6aeb6770e77",
   "lastOpenFiles": [
+    "_scripts/zotero_csv_to_stubs.py",
+    "_scripts",
+    "New folder",
     "Literature Matrix.md",
     "Home.md",
     "README.md",
