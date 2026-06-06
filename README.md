@@ -50,3 +50,6 @@ The PhD Operating System vault references papers by **Better BibTeX citekey** (t
 
 ## Renaming a theme/tag later
 Frontmatter values, not `#tags`. Use the Tag Wrangler plugin, or a vault-wide find-and-replace. Update: (a) the value in paper notes, (b) the MOC filename, (c) the MOC's `WHERE contains(themes, "...")` line.
+
+## Run the Processing Script
+python C:\Users\kiara\Desktop\research-lit\_scripts\zotero_csv_to_stubs.py C:\Users\kiara\Desktop\research-lit.csv C:\Users\kiara\Desktop\research-lit\papers

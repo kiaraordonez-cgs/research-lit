@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Home.md",
-                "mode": "preview",
+                "file": "Literature Matrix.md",
+                "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Home"
+              "title": "Literature Matrix"
             }
           }
         ]
@@ -182,14 +182,17 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "8474c6aeb6770e77",
+  "active": "057670fe916edba7",
   "lastOpenFiles": [
+    "README.md",
+    "papers/A Framework for Multisector Scenarios of Outcomes for Well-Being and Resilience.md",
+    "papers/AI in Charge Large-Scale Experimental Evidence on Electric Vehicle Charging Demand.md",
+    "papers/A low energy demand scenario for meeting the 1.5 °C target and sustainable development goals without negative emission t.md",
+    "Home.md",
     "_scripts/zotero_csv_to_stubs.py",
     "_scripts",
     "New folder",
     "Literature Matrix.md",
-    "Home.md",
-    "README.md",
     "_templates/paper-template.md",
     "papers/EXAMPLE - Protecting the poor with a carbon tax.md",
     "MOCs/IAM-Methods.md",
